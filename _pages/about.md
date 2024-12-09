@@ -7,4 +7,8 @@ redirect_from:
   - /about.html
 ---
 
-Hi there! I am pursuing Master's in Computer Science at University of Montreal and Montreal Institute of Learning Algorithms, Mila. I am interested to leverage foundation models to address the generalization challenge in robotics. I am further motivated to improve robot's perception and language understanding capabilities, enabling them to perform long-horizon tasks.
+Hello! I am currently pursuing a Master’s in Computer Science at the University of Montreal and [MILA](https://mila.quebec/en). My research interests lie in leveraging foundation models to tackle the generalization challenges in robotics. Additionally, I am interested in various challenges including perception, language grounding and understaning to execute long-horizon tasks with the long-term goal to enable robots to assist humanity.
+
+Currently, I am doing a research project for cross-embodiment learning and generalization under the supervision of [Prof. Glen Berseth](https://neo-x.github.io).
+
+Previously, I have
