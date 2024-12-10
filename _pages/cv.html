@@ -2,5 +2,12 @@
 layout: archive
 title: "CV"
 url: /files/Research CV_Fall'24-2.pdf
+permalink: /cv/
 author_profile: true
 ---
+
+{% include base_path %}
+
+{% for post in site.cv %}
+  {% include archive-single-cv.html %}
+{% endfor %}
