@@ -53,7 +53,7 @@
     {% if post.citation and post.paperurl and post.slidesurl %}
       <p> Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
     {% elsif post.citation and post.paperurl %}
-      <p>{{ post.citation }}<br />(*denotes equal contribution)<br /><a href="{{ post.paperurl }}">Paper</a></p>
+      <p>{{ post.citation }}<br />(*denotes equal contribution)<br /><a href="{{ post.codeurl }}">Code</a></p>
     {% elsif post.citation and post.slidesurl %}
       <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Download Slides</a></p>
     {% elsif post.citation %}
