@@ -1,11 +1,13 @@
 ---
-title: "Paper Title Number 1"
+title: "Attention Actor-Critic algorithm for Multi-Agent Constrained Co-operative
+Reinforcement Learning"
 collection: publications
 excerpt: ''
 date: 2021-05-03
 venue: 'AAMAS 2021'
 paperurl: 'https://arxiv.org/pdf/2101.02349'
 imgurl: 'CooperativeNavigation.png'
+show: true
 citation: 'P. Parnika*, Raghuram Bharadwaj Diddigi*, Sai Koti Reddy Danda* and Shalabh Bhatnagar. 2021. Attention Actor-Critic algorithm for Multi-Agent Constrained Co-operative Reinforcement Learning. 20th International Conference on Autonomous Agents and Multiagent Systems(AAMAS). 1616-1618. (International, Poster presentation)'
 ---
 
