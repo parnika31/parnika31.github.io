@@ -81,7 +81,6 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
@@ -182,7 +181,7 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  experience:
+  experiences:
     output: true
     permalink: /:collection/:path/
   portfolio:
@@ -231,10 +230,10 @@ defaults:
       author_profile: true
       share: true
       comments: true
-   # _experience
+   # _experiences
   - scope:
       path: ""
-      type: experience
+      type: experiences
     values:
       layout: single
       author_profile: true
