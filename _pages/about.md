@@ -11,7 +11,7 @@ Hello! I am Parnika. I am pursuing Master’s in Computer Science at the Univers
 
 Currently, I am doing a research project on cross-embodiment learning and generalization under the supervision of [Prof. Glen Berseth](https://neo-x.github.io). Before this, I had the opportunity to collaborate with [Prof. Shalabh Bhatnagar](https://www.csa.iisc.ac.in/~shalabh/) and [Prof. Raghuram Bharadwaj](https://www.iiitb.ac.in/faculty/raghuram-bharadwaj) on research that leveraged attention mechanism to solve cooperative multi-agent reinforcement learning tasks in constrained settings. 
 
-Previously, I worked as a Research Engineer and Technologist at Mindtree and Wipro Ltd. respectively, after completing Bachelor's at Dr. A.P.J. Abdul Kalam Technical University, India. 
+Previously, I worked as a Research Engineer and Technologist at Mindtree and Wipro Ltd. respectively, after completing Bachelor's in Computer Science and Engineering at Dr. A.P.J. Abdul Kalam Technical University, India. 
 
 ### News
 
