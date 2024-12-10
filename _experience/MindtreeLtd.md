@@ -1,6 +1,6 @@
 ---
 title: "Mindtree Ltd."
-collection: experiences
+collection: experience
 link: 'https://www.ltimindtree.com'
 description: 'Research Engineer'
 start: "11/2017"
