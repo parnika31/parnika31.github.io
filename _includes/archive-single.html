@@ -53,7 +53,7 @@
     {% endif %}
     
     {% if post.citation and post.paperurl and post.slidesurl and post.imgurl %}
-      <p><br /><a href="{{ post.imgurl}}">Download Paper</a>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
+      <p><a href="{{ post.imgurl}}"></a> Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
     {% elsif post.citation and post.paperurl %}
       <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a></p>
     {% elsif post.citation and post.slidesurl %}
