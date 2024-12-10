@@ -9,7 +9,7 @@ redirect_from:
 
 Hello! I am Parnika. I am currently pursuing Master’s in Computer Science at the University of Montreal and [MILA](https://mila.quebec/en). My primary research interest lie in leveraging foundation models to tackle generalization challenge in robotics. Additionally, I am interested to explore language grounding to execute long-horizon tasks in robot learning among other ongoing challenges. 
 
-Currently, I am doing a research project for cross-embodiment learning and generalization under the supervision of [Prof. Glen Berseth](https://neo-x.github.io). I had the opportunity to collaborate with [Prof. Shalabh Bhatnagar](https://www.csa.iisc.ac.in/~shalabh/) and [Prof. Raghuram Bharadwaj](https://www.iiitb.ac.in/faculty/raghuram-bharadwaj) on cooperative constrained multi-agent reinforcement learning. 
+Currently, I am doing a research project on cross-embodiment learning and generalization under the supervision of [Prof. Glen Berseth](https://neo-x.github.io). Before this, I had the opportunity to collaborate with [Prof. Shalabh Bhatnagar](https://www.csa.iisc.ac.in/~shalabh/) and [Prof. Raghuram Bharadwaj](https://www.iiitb.ac.in/faculty/raghuram-bharadwaj) on cooperative constrained multi-agent reinforcement learning. 
 
 Previously, I worked as a Research Engineer and Technologist at Mindtree and Wipro Ltd. respectively, after completing Bachelor's at Dr. A.P.J. Abdul Kalam Technical University, India. 
 
