@@ -1,7 +1,6 @@
 ---
-title: "Mindtree Ltd."
+title: <a href=https://www.ltimindtree.com>Mindtree Ltd.</a>
 collection: experiences
-link: 'https://www.ltimindtree.com'
 description: 'Research Engineer'
 start: "11/2017"
 end: "08/2022"
