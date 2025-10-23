@@ -16,7 +16,7 @@ Previously, I worked as a Research Engineer and Technologist at Mindtree and Wip
 ### News
 
 * June 2025. Completed Master's at UdeM/Mila.
-* May-Dec 2024. Research internship at Montreal robotics lab, supervised by Glen Berseth. [Report]()
+* May-Dec 2024. Research internship at Montreal robotics lab, supervised by Glen Berseth. [Report](https://github.com/parnika31/parnika31.github.io/blob/master/files/InternshipReport.pdf)
 * November 2023. Awarded Scholarship from Ministry of Higher Education, Government of Quebec. C$7000
 * October 2023. Awarded University of Montreal Exemption Scholarship for international students, 2nd cycle. C$10000
 * September 2023. Started Master's at UdeM/Mila.
