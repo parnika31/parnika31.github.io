@@ -24,13 +24,13 @@ author:
   avatar           : "profile.png"
   name             : "Parnika"
   pronouns         : "she/her"  
-  bio              : "MSc Student in Computer Science at University of Montreal/Mila"
-  location         : "Montreal,Quebec,Canada"
+  #bio              : "MSc Student in Computer Science at University of Montreal/Mila"
+  #location         : "Montreal,Quebec,Canada"
   uri              : # URL
   email            : "parnika3103@gmail.com" 
 
   # Academic websites
-  googlescholar    : "https://scholar.google.com/citations?user=eS22yHsAAAAJ&hl=en"
+  googlescholar    : "https://scholar.google.com/citations?user=o5PfN2MAAAAJ&hl=en"
 
   # Repositories and software development
   github           : "parnika31"
