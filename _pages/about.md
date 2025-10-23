@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I am Parnika. I recently completed my Master’s in Computer Science at the University of Montreal and [MILA](https://mila.quebec/en). I am interested in working towards improving generalization in robotics, multi-modal training and model optimization for efficient deployment. 
+Hello! I am Parnika. I recently completed my Master’s in Computer Science at the University of Montreal and [MILA](https://mila.quebec/en). I am interested in research on improving generalization performance in robotics, multi-modal training and model optimization for efficient deployment. 
 
 My recent research work explored solutions for cross-embodiment learning and generalization under the supervision of [Prof. Glen Berseth](https://neo-x.github.io). Before this, I had the opportunity to collaborate with [Prof. Shalabh Bhatnagar](https://www.csa.iisc.ac.in/~shalabh/) and [Prof. Raghuram Bharadwaj](https://www.iiitb.ac.in/faculty/raghuram-bharadwaj) on research that leveraged attention mechanism to solve cooperative multi-agent reinforcement learning tasks in constrained settings. 
 
