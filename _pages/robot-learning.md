@@ -57,6 +57,21 @@ table.rl td.num { text-align: right; font-variant-numeric: tabular-nums; white-s
 .video-single { max-width: 430px; margin: 1.2em 0; }
 .speed-tag { display: inline-block; font-size: 0.7em; font-weight: 600; letter-spacing: 0.04em; background: #eef0f3; color: #57606a; border: 1px solid #dde0e4; border-radius: 4px; padding: 0.05em 0.4em; margin-left: 0.35em; vertical-align: middle; }
 .img-slot { border: 1px dashed #cbd0d6; border-radius: 8px; background: #fafbfc; color: #9aa1a9; text-align: center; padding: 2.4em 1em; font-size: 0.85em; margin: 1em 0; }
+.cite-box { border: 1px solid #e2e5e9; background: #fafbfc; border-radius: 8px; padding: 0.9em 1.1em; margin: 1em 0; }
+.cite-box pre { margin: 0.55em 0 0; padding: 0.8em 0.9em; background: #fff; border: 1px solid #e6e8eb; border-radius: 6px; overflow-x: auto; font-size: 0.82em; line-height: 1.5; }
+.cite-box code { background: none; padding: 0; font-size: inherit; }
+.feedback { border: 1px solid #e2e5e9; border-radius: 8px; padding: 1em 1.15em 1.15em; margin: 1em 0; background: #fff; max-width: 620px; }
+.feedback label { display: block; font-size: 0.85em; font-weight: 600; color: #33373c; margin: 0.7em 0 0.25em; }
+.feedback input, .feedback textarea { width: 100%; box-sizing: border-box; font: inherit; font-size: 0.9em; padding: 0.5em 0.6em; border: 1px solid #d7dbe0; border-radius: 6px; background: #fff; color: #23272c; }
+.feedback textarea { min-height: 7.5em; resize: vertical; }
+.feedback input:focus, .feedback textarea:focus { outline: none; border-color: #1a5fb4; box-shadow: 0 0 0 3px rgba(26,95,180,0.12); }
+.feedback button { margin-top: 0.95em; padding: 0.45em 1.25em; font: inherit; font-size: 0.9em; font-weight: 600; color: #fff; background: #1a5fb4; border: 1px solid #1a5fb4; border-radius: 999px; cursor: pointer; }
+.feedback button:hover { background: #17508f; }
+.feedback button[disabled] { opacity: 0.6; cursor: default; }
+.feedback .hp { position: absolute; left: -5000px; width: 1px; }
+.form-status { margin-top: 0.75em; font-size: 0.85em; min-height: 1.2em; }
+.form-status.ok { color: #1f7a45; }
+.form-status.err { color: #a3323d; }
 </style>
 
 ## Task setup
@@ -284,4 +299,74 @@ document.addEventListener("play", function (e) {
     if (v !== e.target) { v.pause(); }
   });
 }, true);
+</script>
+
+## Cite this page
+
+If the results or the failure analysis on this page are useful in your own work, you are very welcome to cite it.
+
+<div class="cite-box">
+<strong>BibTeX</strong>
+<pre><code>{% raw %}@misc{parnika2026so101,
+  author       = {{Parnika}},
+  title        = {Robot Learning --- Imitation Learning on the {SO-101} Arm},
+  year         = {2026},
+  howpublished = {\url{https://parnika31.github.io/robot-learning/}},
+  note         = {Accessed: DD Month YYYY}
+}{% endraw %}</code></pre>
+</div>
+
+<p class="rl-note">The double braces around <code>{% raw %}{{Parnika}}{% endraw %}</code> are intentional: I have a single given name and no surname, and the braces stop BibTeX styles from splitting it or inventing an initial. Please cite it as <strong>Parnika</strong>, not <em>Parnika, P.</em> My ORCID iD is <a href="https://orcid.org/0009-0008-3877-2416">0009-0008-3877-2416</a>, which identifies me unambiguously regardless of how a given system formats the name.</p>
+
+## Comments and feedback
+
+Questions, corrections and suggestions are welcome — especially if you have run similar evaluations and reached different conclusions.
+
+<div class="feedback">
+<form id="feedback-form" action="https://formspree.io/f/xyegjaqk" method="POST">
+  <label for="fb-name">Name</label>
+  <input id="fb-name" type="text" name="name" autocomplete="name">
+  <label for="fb-email">Email <span class="rl-note">(optional &mdash; only needed if you would like a reply)</span></label>
+  <input id="fb-email" type="email" name="email" autocomplete="email">
+  <label for="fb-message">Message</label>
+  <textarea id="fb-message" name="message" required></textarea>
+  <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <button type="submit">Send</button>
+  <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+</form>
+</div>
+
+<script>
+// Submit via fetch so the visitor stays on the page instead of being
+// redirected to the form handler's own confirmation screen.
+(function () {
+  var form = document.getElementById("feedback-form");
+  if (!form) { return; }
+  var status = document.getElementById("form-status");
+  var button = form.querySelector("button[type=submit]");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    status.textContent = "Sending\u2026";
+    status.className = "form-status";
+    button.disabled = true;
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { Accept: "application/json" }
+    }).then(function (res) {
+      if (res.ok) {
+        form.reset();
+        status.textContent = "Thank you \u2014 your message has been sent.";
+        status.className = "form-status ok";
+        return;
+      }
+      return res.json().then(function (d) {
+        throw new Error(((d.errors || []).map(function (x) { return x.message; }).join(", ")) || "Submission failed.");
+      });
+    }).catch(function (err) {
+      status.textContent = err.message || "Something went wrong \u2014 please email me instead.";
+      status.className = "form-status err";
+    }).then(function () { button.disabled = false; });
+  });
+})();
 </script>
