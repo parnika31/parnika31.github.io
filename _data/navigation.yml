@@ -5,15 +5,17 @@
 # prevent it from being included in the site.
 
 main:
+  - title: "Experience"
+    url: /experiences/
+
+  - title: "Projects"
+    url: /portfolio/
+
+  - title: "Robot Learning"
+    url: /robot-learning/
+
   - title: "Publications"
     url: /publications/
 
-  - title: "Experiences"
-    url: /experiences/    
-    
-  - title: "Projects"
-    url: /portfolio/
-        
   - title: "CV"
-    url: https://parnika31.github.io/files/resume.pdf
-    
+    url: /files/resume.pdf

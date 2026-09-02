@@ -1,0 +1,193 @@
+/* ==========================================================================
+   Custom design polish
+   ========================================================================== */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* --- Headings ------------------------------------------------------------ */
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.01em;
+  color: #1f2328;
+}
+
+.page__title {
+  font-size: 1.9em;
+  margin-bottom: 0.6em;
+}
+
+.page__content {
+  font-size: 0.95em;
+  line-height: 1.7;
+
+  h2, h3 {
+    margin-top: 1.8em;
+    padding-bottom: 0.35em;
+    border-bottom: 1px solid #eceef1;
+  }
+
+  p > a,
+  li > a {
+    text-decoration: underline;
+    text-decoration-color: rgba(26, 95, 180, 0.35);
+    text-underline-offset: 2px;
+
+    &:hover {
+      text-decoration-color: $link-color;
+    }
+  }
+
+  li {
+    margin-bottom: 0.4em;
+  }
+}
+
+/* --- Masthead / navigation ------------------------------------------------ */
+
+.masthead {
+  border-bottom: 1px solid #e8eaed;
+
+  .site-title {
+    font-family: $serif;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+}
+
+.greedy-nav {
+  a {
+    font-weight: 500;
+    font-size: 0.95em;
+
+    &:hover {
+      color: $link-color;
+    }
+  }
+}
+
+/* --- Author sidebar -------------------------------------------------------- */
+
+.author__avatar img {
+  border: 3px solid #fff;
+  box-shadow: 0 2px 14px rgba(15, 23, 42, 0.16);
+}
+
+.author__name {
+  font-family: $serif;
+  font-size: 1.15em;
+}
+
+.author__bio {
+  color: #57606a;
+  font-size: 0.82em;
+  line-height: 1.5;
+}
+
+.author__urls {
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    font-size: 0.9em;
+  }
+}
+
+/* --- Archive lists (publications, experience, projects) -------------------- */
+
+.list__item {
+  padding: 1.5em 0 1.4em;
+  border-bottom: 1px solid #eef0f3;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .archive__item-title {
+    margin-top: 0;
+    font-size: 1.25em;
+    line-height: 1.35;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+    }
+
+    img {
+      display: block;
+      margin: 0.8em 0 0.2em;
+      border: 1px solid #e8eaed;
+      border-radius: 10px;
+      height: auto;
+    }
+  }
+
+  .archive__item-excerpt {
+    color: #4b5563;
+    line-height: 1.65;
+    font-size: 0.9em;
+  }
+
+  p {
+    font-size: 0.92em;
+    color: #4b5563;
+  }
+}
+
+/* --- Experience entries ----------------------------------------------------- */
+
+.exp__meta {
+  font-weight: 600;
+  color: #1f2328 !important;
+  margin-bottom: 0.4em;
+}
+
+.exp__dates {
+  float: right;
+  font-weight: 500;
+  font-size: 0.85em;
+  color: #6b7280;
+}
+
+.exp__desc {
+  clear: both;
+}
+
+/* --- Publication link pills ------------------------------------------------ */
+
+.btn--research {
+  display: inline-block;
+  padding: 0.15em 0.95em;
+  margin: 0.35em 0.3em 0 0;
+  border: 1px solid rgba(26, 95, 180, 0.45);
+  border-radius: 999px;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: $link-color;
+  text-decoration: none !important;
+  transition: background-color 0.15s ease, color 0.15s ease;
+
+  &:hover {
+    background-color: $link-color;
+    color: #fff;
+  }
+}
+
+/* --- Footer ----------------------------------------------------------------- */
+
+.page__footer {
+  background: #fafbfc;
+  border-top: 1px solid #eceef1;
+
+  footer {
+    margin-top: 1.5em;
+  }
+}

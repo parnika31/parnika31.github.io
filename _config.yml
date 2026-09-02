@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "PARNIKA"
 title_separator          : "-"
 name                     : &name "Parnika"
-description              : &description "MSc Student in Computer Science at University of Montreal/Mila"
+description              : &description "Research Engineer — Reinforcement Learning, Robot Imitation Learning & Edge Deployment. M.Sc. in Machine Learning, Mila / Université de Montréal."
 url                      : https://parnika31.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "parnika31/parnika31.github.io"
@@ -23,14 +23,14 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Parnika"
-  pronouns         : "she/her"  
-  #bio              : "MSc Student in Computer Science at University of Montreal/Mila"
-  #location         : "Montreal,Quebec,Canada"
+  pronouns         : "she/her"
+  bio              : "Research Engineer — RL, Robot Imitation Learning & Edge Deployment"
   uri              : # URL
-  email            : "parnika3103@gmail.com" 
+  email            : "parnika3100@gmail.com"
 
   # Academic websites
   googlescholar    : "https://scholar.google.com/citations?user=o5PfN2MAAAAJ&hl=en"
+  orcid            : "https://orcid.org/0009-0008-3877-2416"
 
   # Repositories and software development
   github           : "parnika31"
