@@ -232,7 +232,7 @@ Next steps: (1) a quantified eval under the same 0.5/0.5 scoring, measuring the 
 <table class="rl">
 <tbody>
 <tr><th>Base checkpoint</th><td>π0.5 (<code>pi05_base</code>), PyTorch backend, bfloat16 with gradient checkpointing and <code>torch.compile</code> (max-autotune)</td></tr>
-<tr><th>Adaptation</th><td><strong>LoRA</strong> on both the PaliGemma VLM backbone (<code>gemma_2b_lora</code>) and the action expert (<code>gemma_300m_lora</code>); no modules frozen</td></tr>
+<tr><th>Adaptation</th><td><strong>LoRA</strong> on both the PaliGemma VLM backbone (<code>gemma_2b_lora</code>) and the action expert (<code>gemma_300m_lora</code>); LoRA on attention and FFN(rank 16 and 32 on these backbones respectively)</td></tr>
 <tr><th>Observations</th><td>Overhead and wrist cameras, joint state; delta joint actions; the language prompt is taken from the task string</td></tr>
 <tr><th>Action head</th><td>Action horizon 25, action dimension 32, max token length 200</td></tr>
 <tr><th>Optimiser</th><td>β₁ 0.9, β₂ 0.95, ε 1e-8, weight decay 1e-10, gradient-norm clip 1.0; no EMA</td></tr>
